@@ -87,7 +87,7 @@ section{scroll-margin-top:16px}
 
 /* profile */
 .profile{display:grid;grid-template-columns:132px 1fr;gap:22px;align-items:center}
-.photo{width:132px;aspect-ratio:1;border-radius:14px;background:linear-gradient(145deg,var(--c1),var(--c2));display:grid;place-items:center;color:#fff;font:700 40px/1 var(--sans);position:relative;overflow:hidden}
+.photo{width:132px;aspect-ratio:1;border-radius:14px;background:linear-gradient(145deg,var(--c1),var(--c2));display:grid;place-items:center;color:#fff;font:700 40px/1 var(--sans);position:relative;overflow:hidden;object-fit:cover;object-position:50% 30%;height:auto}
 .photo small{position:absolute;bottom:8px;font:600 9px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;opacity:.8}
 .profile .hook{font:600 clamp(18px,1.9vw,22px)/1.35 var(--sans);margin:0 0 10px;letter-spacing:-.01em}
 .profile p{margin:0 0 10px;color:var(--muted)}
@@ -272,6 +272,30 @@ details[open] .chev{transform:rotate(180deg)}
   </header>
 
   <div class="grid">
+    <div class="v s7">
+      <h3>Profile <span>Doha, Qatar</span></h3>
+      <div class="profile">
+        <img class="photo" src="photo.jpeg" alt="Mohamed Idris" width="132" height="132">
+        <div>
+          <p class="hook">Companies are redesigning jobs around AI. I work on the HR data that says who has which skills, who can move where, and what training closes the gap.</p>
+          <p>Six years as a Workforce Analyst in HR on redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs. Preparing for Microsoft PL-300, January 2027.</p>
+          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>Copilot</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="v s5">
+      <h3>Career mix <span>Years by track</span></h3>
+      <div class="donut-wrap">
+        <div class="donut" role="img" aria-label="Career years by track: Analytics 9.4, Administration and support 16.0, IT and design 1.0"><b><span>26.4<small>years total</small></span></b></div>
+        <ul class="legend">
+          <li><i style="background:var(--c1)"></i>Analytics<b>9.4</b></li>
+          <li><i style="background:var(--c2)"></i>Admin &amp; business support<b>16.0</b></li>
+          <li><i style="background:var(--c4)"></i>IT &amp; design<b>1.0</b></li>
+        </ul>
+      </div>
+    </div>
+
     <div class="v kpi s3" style="--k:var(--c1);--ks:var(--c1-soft)">
       <div class="lbl">Years in analytics</div>
       <div class="val" data-count="9">9<small>yrs</small></div>
@@ -295,30 +319,6 @@ details[open] .chev{transform:rotate(180deg)}
       <div class="val" data-count="13.9" data-suffix="%">13.9%</div>
       <div class="sub">Through user role analysis</div>
       <span class="chip">Cost saving</span>
-    </div>
-
-    <div class="v s7">
-      <h3>Profile <span>Doha, Qatar</span></h3>
-      <div class="profile">
-        <div class="photo" role="img" aria-label="Mohamed Idris initials">MI</div>
-        <div>
-          <p class="hook">Companies are redesigning jobs around AI. I work on the HR data that says who has which skills, who can move where, and what training closes the gap.</p>
-          <p>Six years as a Workforce Analyst in HR on redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs. Preparing for Microsoft PL-300, January 2027.</p>
-          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>Copilot</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="v s5">
-      <h3>Career mix <span>Years by track</span></h3>
-      <div class="donut-wrap">
-        <div class="donut" role="img" aria-label="Career years by track: Analytics 9.4, Administration and support 16.0, IT and design 1.0"><b><span>26.4<small>years total</small></span></b></div>
-        <ul class="legend">
-          <li><i style="background:var(--c1)"></i>Analytics<b>9.4</b></li>
-          <li><i style="background:var(--c2)"></i>Admin &amp; business support<b>16.0</b></li>
-          <li><i style="background:var(--c4)"></i>IT &amp; design<b>1.0</b></li>
-        </ul>
-      </div>
     </div>
 
     <!-- career -->
