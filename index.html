@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mohamed Idris · People Analytics & Workforce Planning</title>
-<meta name="description" content="Mohamed Idris, people analytics and strategic workforce planning. Skills mapping, redeployment and reskilling analytics, HR data models, Power BI, SQL and Copilot.">
+<meta name="description" content="Mohamed Idris, people analytics and strategic workforce planning. Workforce resourcing, job matching, redeployment and reskilling analytics, HR data and systems (SuccessFactors, iCIMS), Power BI, SQL and Copilot.">
 <meta name="color-scheme" content="light only">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,6 +142,23 @@ section{scroll-margin-top:16px}
 .users .stack i:first-child{margin-left:0}
 .users b{font:600 26px/1 var(--mono);color:var(--c1)}
 .users small{display:block;font-size:11px;color:var(--muted)}
+.plan{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;align-items:end;width:100%;height:100%}
+.plan div{display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end}
+.plan i{display:block;width:100%;border-radius:4px 4px 2px 2px;background:var(--c1);transform-origin:bottom}
+.plan div+div i{background:var(--c1-soft);border:1.5px dashed var(--c1)}
+.plan small{font:600 10px/1 var(--mono);color:var(--muted)}
+.flow{display:flex;align-items:center;gap:8px;width:100%;justify-content:center}
+.flow .n{border-radius:8px;background:var(--card);border:1px solid var(--line);padding:8px 10px;text-align:center;font:600 12px/1.25 var(--sans)}
+.flow .n small{display:block;font:500 10px/1.3 var(--sans);color:var(--muted)}
+.flow .n.hi{border-color:var(--k);color:var(--k)}
+.flow .ar{color:var(--muted);font:600 16px/1 var(--mono)}
+.flow .src{display:grid;gap:4px;margin:0}
+.flow .src span{font:600 10px/1 var(--mono);padding:4px 6px;border-radius:4px;background:var(--card);border:1px solid var(--line);white-space:nowrap}
+.ms{list-style:none;margin:0;padding:0;width:100%;display:grid;gap:7px}
+.ms li{display:grid;grid-template-columns:62px 10px 1fr;gap:8px;align-items:center;font-size:12px}
+.ms b{font:600 11px/1 var(--mono);color:var(--muted)}
+.ms i{width:10px;height:10px;border-radius:50%;background:var(--k)}
+.ms li.p i{background:transparent;border:2px dashed var(--k)}
 
 /* table (role details) */
 .roles details{border-top:1px solid var(--line)}
@@ -191,6 +208,8 @@ details[open] .chev{transform:rotate(180deg)}
 /* motion */
 @media (prefers-reduced-motion:no-preference){
   html{scroll-behavior:smooth}
+  .plan i{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{transform:scaleY(0)}}
   .bar,.cmp i{animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
   .donut{animation:spin .9s cubic-bezier(.2,.7,.2,1) both}
   @keyframes grow{from{transform:scaleX(0)}}
@@ -269,8 +288,8 @@ details[open] .chev{transform:rotate(180deg)}
         <img class="photo" src="photo.jpeg" alt="Mohamed Idris" width="132" height="132">
         <div>
           <p class="hook">Companies are redesigning jobs around AI. I work on the HR data that says who has which skills, who can move where, and what training closes the gap.</p>
-          <p>Six years as a Workforce Analyst in HR on redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs. Preparing for Microsoft PL-300, January 2027.</p>
-          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>Copilot</span></div>
+          <p>Six years as a Workforce Analyst in HR on annual resourcing plans, redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs, and business lead for their side of the iCIMS and SuccessFactors rollouts. Preparing for Microsoft PL-300, January 2027.</p>
+          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>SuccessFactors</span><span>iCIMS</span><span>Copilot</span></div>
         </div>
       </div>
     </div>
@@ -318,9 +337,9 @@ details[open] .chev{transform:rotate(180deg)}
       <h3>Roles over time <span>Hover a bar for details</span></h3>
       <div class="gantt">
         <div class="g-row"><div class="g-lbl">Reporting Analyst<small>QatarEnergy · L&amp;D</small></div>
-          <div class="track"><div class="bar-wrap r" style="left:86.9%;width:13.1%"><span class="bar" tabindex="0" style="--b:var(--c1);position:absolute;inset:4px 0">3.5y</span><span class="tip">Apr 2023 – present · 1,000+ students, 6 programs</span></div></div></div>
+          <div class="track"><div class="bar-wrap r" style="left:86.9%;width:13.1%"><span class="bar" tabindex="0" style="--b:var(--c1);position:absolute;inset:4px 0">3.5y</span><span class="tip">Apr 2023 – present · 1,000+ students, 6 programs · iCIMS + SuccessFactors rollouts</span></div></div></div>
         <div class="g-row"><div class="g-lbl">Workforce Analyst<small>QatarEnergy · HR</small></div>
-          <div class="track"><div class="bar-wrap r" style="left:65.1%;width:21.8%"><span class="bar" tabindex="0" style="--b:var(--c1);position:absolute;inset:4px 0">5.9y</span><span class="tip">May 2017 – Apr 2023 · built the workforce database</span></div></div></div>
+          <div class="track"><div class="bar-wrap r" style="left:65.1%;width:21.8%"><span class="bar" tabindex="0" style="--b:var(--c1);position:absolute;inset:4px 0">5.9y</span><span class="tip">May 2017 – Apr 2023 · annual resourcing plans · CAT database · job-matching tool</span></div></div></div>
         <div class="g-row"><div class="g-lbl">Document Controller<small>Mesaieed Operations</small></div>
           <div class="track"><div class="bar-wrap r" style="left:58.1%;width:7.0%"><span class="bar" tabindex="0" style="--b:var(--c2);position:absolute;inset:4px 0">1.9y</span><span class="tip">Jun 2015 – May 2017 · cut SAP HR licences 13.9%</span></div></div></div>
         <div class="g-row"><div class="g-lbl">Administration Supervisor<small>Gas Production</small></div>
@@ -346,11 +365,41 @@ details[open] .chev{transform:rotate(180deg)}
     <h2 class="sec-title" id="work">Selected work</h2>
     <article class="v proj s4" style="--k:var(--c1);--ks:var(--c1-soft)">
       <div class="viz">
+        <div class="plan" role="img" aria-label="Resourcing plan: one-year plan plus four-year outlook">
+          <div><i style="height:78%"></i><small>Y1</small></div><div><i style="height:70%"></i><small>Y2</small></div><div><i style="height:64%"></i><small>Y3</small></div><div><i style="height:58%"></i><small>Y4</small></div><div><i style="height:52%"></i><small>Y5</small></div>
+        </div>
+      </div>
+      <span class="tag">Workforce planning · 2017–23</span>
+      <h4>Annual workforce resourcing plan</h4>
+      <p>Every year handled the plan for my assigned employee population: a one-year plan and four-year outlook feeding the company's business planning cycle.</p>
+    </article>
+    <article class="v proj s4" style="--k:var(--c2);--ks:var(--c2-soft)">
+      <div class="viz">
+        <div class="flow" role="img" aria-label="Employee profile scored against role requirements">
+          <div class="n">Employee<small>qualifications<br>experience · skills</small></div><span class="ar" aria-hidden="true">→</span><div class="n hi">Match<small>score</small></div><span class="ar" aria-hidden="true">→</span><div class="n">Role<small>requirements</small></div>
+        </div>
+      </div>
+      <span class="tag">Redeployment · 2019</span>
+      <h4>Job-matching tool redesign</h4>
+      <p>Redesigned and rolled out the tool that scores employees against role requirements for redundancy and restructuring placements.</p>
+    </article>
+    <article class="v proj s4" style="--k:var(--c4);--ks:var(--c4-soft)">
+      <div class="viz">
+        <div class="flow" role="img" aria-label="SAP HR and other HR unit data loaded into one SharedData source">
+          <div class="src"><span>SAP HR</span><span>Workforce</span><span>Organisation</span><span>Planning</span></div><span class="ar" aria-hidden="true">→</span><div class="n hi">SharedData<small>single source<br>of truth</small></div>
+        </div>
+      </div>
+      <span class="tag">Data integration · 2018</span>
+      <h4>SharedData: one source for HR</h4>
+      <p>Cross-unit project led by Strategic Workforce Planning. I represented Workforce Analysis. Daily SAP reports loaded through schema-based ETL.</p>
+    </article>
+    <article class="v proj s4" style="--k:var(--c1);--ks:var(--c1-soft)">
+      <div class="viz">
         <div class="users"><div class="stack" aria-hidden="true"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i><i style="--n:4"></i></div><div><b>10+</b><small>concurrent users</small></div></div>
       </div>
-      <span class="tag">Database · ETL</span>
-      <h4>Multi-user workforce database</h4>
-      <p>Access back end, automated ETL from HR source data, and a front-end app the whole team used at the same time.</p>
+      <span class="tag">Database · ETL · 2017–18</span>
+      <h4>CAT: Control, Action &amp; Track</h4>
+      <p>The team's multi-user workforce database: Access back end, automated ETL from SAP HR, and a front-end app for logging actions and records.</p>
     </article>
     <article class="v proj s4" style="--k:var(--c2);--ks:var(--c2-soft)">
       <div class="viz">
@@ -362,15 +411,15 @@ details[open] .chev{transform:rotate(180deg)}
     </article>
     <article class="v proj s4" style="--k:var(--c3);--ks:var(--c3-soft)">
       <div class="viz">
-        <div class="cmp" role="img" aria-label="Licence cost index: before 100, after 86.1">
-          <div>Before<i style="--b:var(--muted);width:100%"></i><b>100</b></div>
-          <div>After<i style="--b:var(--c3);width:86.1%"></i><b>86.1</b></div>
-          <div style="grid-template-columns:1fr"><small>Licence cost index · −13.9%</small></div>
-        </div>
+        <ul class="ms" aria-label="HR systems rollout milestones">
+          <li><b>Jul 2025</b><i></i><span>iCIMS live · vocational</span></li>
+          <li><b>Jan 2026</b><i></i><span>iCIMS live · academic</span></li>
+          <li class="p"><b>Dec 2026</b><i></i><span>SuccessFactors ONB 2.0 · planned</span></li>
+        </ul>
       </div>
-      <span class="tag">Analysis · Systems</span>
-      <h4>SAP HR licences and ECM rollout</h4>
-      <p>Cut licence costs 13.9% through user role analysis. Led the ECM rollout across 9 departments.</p>
+      <span class="tag">HR systems · 2024–26</span>
+      <h4>iCIMS and SuccessFactors rollouts</h4>
+      <p>Business lead for the scholarship side: requirements, design, UAT scripts and business testing rounds.</p>
     </article>
 
     <!-- roles -->
@@ -380,26 +429,30 @@ details[open] .chev{transform:rotate(180deg)}
       <details open style="--k:var(--c1)">
         <summary><span class="p">Apr 2023 – present</span><span class="r"><b>Reporting Analyst</b><span>QatarEnergy · Learning &amp; Development · Doha</span></span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span></summary>
         <ul>
+          <li>Business lead for the scholarship side of the company-wide move to iCIMS Talent Acquisition Portal: requirements, design, UAT scripts and business testing. Live <b>Jul 2025</b> (vocational) and <b>Jan 2026</b> (academic)</li>
+          <li>SuccessFactors Onboarding 2.0: designing the business process, UAT structure and reporting, go-live planned <b>Dec 2026</b></li>
+          <li>Designed competencies for scholarship roles in the job family framework; now validate competency assessments for talent management</li>
           <li>Build Power BI dashboards and Excel models tracking <b>1,000+</b> students across <b>6</b> programs, the company's future talent pipeline</li>
-          <li>Automated recurring program reports with Power Query and VBA</li>
-          <li>Use Copilot in Power BI and Microsoft 365 to draft DAX, summarise data and speed up reporting</li>
+          <li>Automated recurring program reports with Power Query and VBA; use Copilot in Power BI and Microsoft 365 for DAX and summaries</li>
           <li>Check SuccessFactors LMS and student records for data quality before each reporting cycle</li>
-          <li>Prepare the analysis behind program planning and budget requests</li>
         </ul>
       </details>
       <details style="--k:var(--c1)">
         <summary><span class="p">May 2017 – Apr 2023</span><span class="r"><b>Workforce Analyst</b><span>QatarEnergy (Qatar Petroleum) · Human Resources · Doha</span></span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span></summary>
         <ul>
-          <li>Matched employees affected by redundancy and restructuring to open roles on qualifications and experience</li>
+          <li>Handled the annual resourcing plan for my assigned employee population every year: a <b>1</b>-year plan and <b>4</b>-year outlook feeding the business planning cycle</li>
+          <li>Built CAT (Control, Action &amp; Track), the team's workforce database, in 2017–18: Access back end, automated ETL from SAP HR, used daily by <b>10+</b> analysts and admin staff</li>
+          <li>Redesigned and rolled out the job-matching tool in 2019; used it to place employees affected by redundancy and restructuring</li>
+          <li>Represented Workforce Analysis on SharedData (2018), a cross-unit single source of truth for HR data</li>
           <li>Assessed staff capability for redesigned roles during re-orgs in <b>4</b> functions</li>
-          <li>Built the team's workforce database and app, with automated ETL from SAP HR, used daily by <b>10+</b> analysts and admin staff</li>
-          <li>Tracked mobility, redundancy and Qatarization trends for reskilling, redeployment and retirement planning</li>
+          <li>Built monitoring tools for fixed-term contracts; tested SuccessFactors and mapped positions to new job families</li>
         </ul>
       </details>
       <details style="--k:var(--c2)">
         <summary><span class="p">Jun 2015 – May 2017</span><span class="r"><b>Document Controller</b><span>Qatar Petroleum · Business Support, Mesaieed Operations</span></span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span></summary>
         <ul>
           <li>Cut SAP HR licence costs <b>13.9%</b> through user role analysis</li>
+          <li>Set up ISO 9001 document control for engineering change and project documents</li>
           <li>Led the ECM system rollout across <b>9</b> departments</li>
           <li>Championed the Operational Excellence initiative on frontline staff alignment</li>
         </ul>
@@ -407,7 +460,7 @@ details[open] .chev{transform:rotate(180deg)}
       <details style="--k:var(--c2)">
         <summary><span class="p">1999 – 2015</span><span class="r"><b>Earlier roles</b><span>Administration Supervisor · Senior Administrator · Al Jazeera Channel</span></span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span></summary>
         <ul>
-          <li>Ran Gas Production's administration unit across Mesaieed, Dukhan and offshore sites; focal point for manpower planning and KPIs</li>
+          <li>Supervised Gas Production's administration team across Mesaieed, Dukhan and offshore sites; focal point for manpower plans, KPIs, budgets and training needs</li>
           <li>Administration for Maintenance, Operations Engineering and Gas Production departments</li>
           <li>Designed magazines, festival booklets, logos and a website in HTML at Al Jazeera Channel</li>
         </ul>
@@ -417,16 +470,16 @@ details[open] .chev{transform:rotate(180deg)}
     <!-- skills -->
     <h2 class="sec-title" id="skills">Skills</h2>
     <div class="v s4" style="--k:var(--c1)">
-      <h3>Data &amp; tools <span>6 selected</span></h3>
-      <ul class="slist"><li>Microsoft Power BI</li><li>DAX &amp; Power Query</li><li>SQL</li><li>ETL &amp; data modeling</li><li>Microsoft Access &amp; VBA</li><li>Python <small style="color:var(--muted)">· learning</small></li></ul>
+      <h3>Data &amp; tools <span>7 selected</span></h3>
+      <ul class="slist"><li>Microsoft Power BI</li><li>DAX &amp; Power Query</li><li>SQL</li><li>ETL &amp; data modeling</li><li>Data integration</li><li>Microsoft Access &amp; VBA</li><li>Python <small style="color:var(--muted)">· learning</small></li></ul>
     </div>
     <div class="v s4" style="--k:var(--c2)">
-      <h3>People analytics <span>5 selected</span></h3>
-      <ul class="slist"><li>Strategic workforce planning</li><li>Skills gap analysis</li><li>Redeployment &amp; internal mobility</li><li>Reskilling &amp; learning analytics</li><li>Organisational design</li></ul>
+      <h3>People analytics <span>7 selected</span></h3>
+      <ul class="slist"><li>Strategic workforce planning</li><li>Workforce resourcing plans</li><li>Job matching &amp; competencies</li><li>Skills gap analysis</li><li>Redeployment &amp; internal mobility</li><li>Reskilling &amp; learning analytics</li><li>Organisational design</li></ul>
     </div>
     <div class="v s4" style="--k:var(--c4)">
-      <h3>Systems &amp; AI <span>5 selected</span></h3>
-      <ul class="slist"><li>SAP HR &amp; SuccessFactors</li><li>Data quality &amp; governance</li><li>Copilot in Power BI &amp; M365</li><li>Claude &amp; ChatGPT <small style="color:var(--muted)">· own builds</small></li><li>Business process mapping</li></ul>
+      <h3>Systems &amp; AI <span>7 selected</span></h3>
+      <ul class="slist"><li>SAP HR &amp; SuccessFactors</li><li>iCIMS Talent Acquisition</li><li>Requirements &amp; UAT</li><li>Data quality &amp; governance</li><li>Copilot in Power BI &amp; M365</li><li>Claude &amp; ChatGPT <small style="color:var(--muted)">· own builds</small></li><li>Business process mapping</li></ul>
     </div>
 
     <!-- education -->
@@ -434,7 +487,7 @@ details[open] .chev{transform:rotate(180deg)}
     <div class="v s4">
       <h3>Education</h3>
       <ul class="list" style="--k:var(--c4)">
-        <li><span class="yr">2015</span><span>Specialized Master's, Strategic Business Unit Management<small>HEC Paris, Doha campus</small></span></li>
+        <li><span class="yr">2015</span><span>Specialized Master's, Strategic Business Unit Management<small>HEC Paris, Doha campus · research: how organisational culture shapes best-practice adoption in Qatar oil and gas (survey, interviews, OCAI)</small></span></li>
         <li><span class="yr">2006</span><span>Bachelor's, Applied Computing<small>Southern Cross University</small></span></li>
         <li><span class="yr">2005</span><span>Advanced Diploma, Software Engineering<small>Aptech Worldwide, Doha</small></span></li>
       </ul>
