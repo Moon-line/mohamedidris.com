@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mohamed Idris · People Analytics & Workforce Planning</title>
-<meta name="description" content="Mohamed Idris, people analytics and strategic workforce planning. Workforce resourcing, job matching, redeployment and reskilling analytics, HR data and systems (SuccessFactors, iCIMS), Power BI, SQL and Copilot.">
+<meta name="description" content="Mohamed Idris, people analytics and strategic workforce planning. Workforce resourcing, job matching, redeployment and reskilling analytics, HR data and systems (SuccessFactors, iCIMS), Power BI, Power Automate, SQL and Copilot.">
 <meta name="color-scheme" content="light only">
 <link rel="canonical" href="https://mohamedidris.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mohamed Idris","url":"https://mohamedidris.com/","jobTitle":"Reporting Analyst","worksFor":{"@type":"Organization","name":"QatarEnergy"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"HEC Paris"},{"@type":"CollegeOrUniversity","name":"Southern Cross University"}],"knowsAbout":["People analytics","Strategic workforce planning","Power BI","SQL","HRIS","SAP SuccessFactors"],"sameAs":["https://www.linkedin.com/in/mohamedidris/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mohamed Idris","url":"https://mohamedidris.com/","jobTitle":"Reporting Analyst","worksFor":{"@type":"Organization","name":"QatarEnergy"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"HEC Paris"},{"@type":"CollegeOrUniversity","name":"Southern Cross University"}],"knowsAbout":["Power Automate","ETL","People analytics","Strategic workforce planning","Power BI","SQL","HRIS","SAP SuccessFactors"],"sameAs":["https://www.linkedin.com/in/mohamedidris/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -174,6 +174,8 @@ section{scroll-margin-top:16px}
 .flow .ar{color:var(--muted);font:600 16px/1 var(--mono)}
 .flow .src{display:grid;gap:4px;margin:0}
 .flow .src span{font:600 10px/1 var(--mono);padding:4px 6px;border-radius:4px;background:var(--card);border:1px solid var(--line);white-space:nowrap}
+.proj.wide .viz{height:auto;min-height:120px}
+.flow.wide{flex-wrap:wrap;row-gap:10px}
 .ms{list-style:none;margin:0;padding:0;width:100%;display:grid;gap:7px}
 .ms li{display:grid;grid-template-columns:62px 10px 1fr;gap:8px;align-items:center;font-size:12px}
 .ms b{font:600 11px/1 var(--mono);color:var(--muted)}
@@ -309,8 +311,8 @@ details[open] .chev{transform:rotate(180deg)}
         <img class="photo" src="photo.jpeg" alt="Mohamed Idris" width="132" height="132">
         <div>
           <p class="hook">I work on the HR data behind workforce decisions: who has which skills, who can move into which roles, and what training closes the gap.</p>
-          <p>Six years as a Workforce Analyst in HR on annual resourcing plans, redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programmes, and business lead for their side of the iCIMS and SuccessFactors rollouts. Preparing for Microsoft PL-300, January 2027.</p>
-          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>SuccessFactors</span><span>iCIMS</span><span>Copilot</span></div>
+          <p>I'm the Reporting Analyst for QatarEnergy's scholarship and vocational programmes. I built the team's daily LMS data pipeline and I'm the programmes' business lead for the iCIMS and SuccessFactors rollouts. Before that I spent six years as a Workforce Analyst in HR on resourcing plans, redundancy placement, job matching and re-orgs. I sit the Microsoft PL-300 exam in January 2027.</p>
+          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>Power Automate</span><span>SQL</span><span>HR Data Models</span><span>SuccessFactors</span><span>iCIMS</span><span>Copilot</span></div>
         </div>
       </div>
     </div>
@@ -372,6 +374,21 @@ details[open] .chev{transform:rotate(180deg)}
 
     <!-- work -->
     <h2 class="sec-title" id="work">Selected work</h2>
+    <article class="v proj s12 wide" style="--k:var(--c4);--ks:var(--c4-soft)">
+      <div class="viz">
+        <div class="flow wide" role="img" aria-label="Pipeline steps: SuccessFactors LMS reports, Outlook, Power Automate, Office Scripts, SharePoint, team email">
+          <div class="n">SuccessFactors LMS<small>4 daily CSV reports</small></div><span class="ar" aria-hidden="true">→</span>
+          <div class="n">Outlook<small>scheduled emails</small></div><span class="ar" aria-hidden="true">→</span>
+          <div class="n hi">Power Automate<small>2 flows</small></div><span class="ar" aria-hidden="true">→</span>
+          <div class="n hi">Office Scripts<small>clean · combine · fill gaps</small></div><span class="ar" aria-hidden="true">→</span>
+          <div class="n">SharePoint<small>dated snapshot + latest</small></div><span class="ar" aria-hidden="true">→</span>
+          <div class="n">Team email<small>HTML + link</small></div>
+        </div>
+      </div>
+      <span class="tag">Automation · ETL · 2026</span>
+      <h4>Daily LMS data pipeline</h4>
+      <p>Four SuccessFactors LMS reports arrive by email each day. Two Power Automate flows and Office Scripts clean and combine them, fill gaps from two reference tables I maintain, and check for duplicate or missing files. The team then gets an email with a link to the new dated file. Running since October 2026; Power BI dashboards are in progress. <a class="case-link" href="#case-lms">Read the case study</a></p>
+    </article>
     <article class="v proj s4" style="--k:var(--c1);--ks:var(--c1-soft)">
       <div class="viz">
         <div class="plan" role="img" aria-label="Resourcing plan: one-year plan plus four-year outlook">
@@ -400,7 +417,7 @@ details[open] .chev{transform:rotate(180deg)}
       </div>
       <span class="tag">Data integration · 2018</span>
       <h4>SharedData: one source for HR</h4>
-      <p>Cross-unit project led by Strategic Workforce Planning. I represented Workforce Analysis. Daily SAP reports loaded through schema-based ETL.</p>
+      <p>A cross-unit project, led by Strategic Workforce Planning, that brought HR data into one database. I represented Workforce Analysis. Schema-based ETL loaded the daily SAP reports.</p>
     </article>
     <article class="v proj s4" style="--k:var(--c1);--ks:var(--c1-soft)">
       <div class="viz">
@@ -408,7 +425,7 @@ details[open] .chev{transform:rotate(180deg)}
       </div>
       <span class="tag">Database · ETL · 2017–18</span>
       <h4>CAT: Control, Action &amp; Track</h4>
-      <p>The team's multi-user workforce database: Access back end, automated ETL from SAP HR, and a front-end app for logging actions and records.</p>
+      <p>I built the team's multi-user workforce database: an Access back end, automated ETL from SAP HR, and a front end for logging actions and employee records.</p>
     </article>
     <article class="v proj s4" style="--k:var(--c2);--ks:var(--c2-soft)">
       <div class="viz">
@@ -416,7 +433,7 @@ details[open] .chev{transform:rotate(180deg)}
       </div>
       <span class="tag">Power BI · Reporting</span>
       <h4>Scholarship &amp; vocational reporting</h4>
-      <p>Dashboards and data models covering 1,000+ students across 6 academic and vocational programmes.</p>
+      <p>I build the Power BI dashboards and data models that cover 1,000+ students across 6 academic and vocational programmes.</p>
     </article>
     <article class="v proj s4" style="--k:var(--c3);--ks:var(--c3-soft)">
       <div class="viz">
@@ -432,7 +449,17 @@ details[open] .chev{transform:rotate(180deg)}
     </article>
 
     <!-- roles -->
-    <h2 class="sec-title" id="case">Case study</h2>
+    <h2 class="sec-title" id="case">Case studies</h2>
+    <section class="v s12" id="case-lms" aria-label="Case study: daily LMS data pipeline">
+      <h3>Daily LMS data pipeline <span>Reporting Analyst · since Oct 2026</span></h3>
+      <div class="case">
+        <p class="lede">I built this alone, on my own initiative. It has run every day since October 2026.</p>
+        <div><h4>Purpose</h4><p>The team had no accurate, ready-to-use LMS report when they needed it.</p></div>
+        <div><h4>How it works</h4><p>SuccessFactors LMS emails four scheduled CSV reports each day. The first Power Automate flow saves each attachment to SharePoint as it arrives. The second flow cleans, renames and combines the files with Office Scripts and fills gaps from the two reference tables. It checks for duplicate or missing files, saves today's dated snapshot and refreshes the latest file. Last, it emails the team an HTML summary with a link to the new file.</p></div>
+        <div><h4>My part</h4><p>I used Microsoft 365 Copilot to help write the flows and scripts. I maintain the two reference tables and am building Power BI dashboards on the output.</p></div>
+      </div>
+    </section>
+
     <section class="v s12" aria-label="Case study: job-matching tool">
       <h3>Job matching for redundancy placement <span>Workforce Analysis · 2019</span></h3>
       <div class="case">
@@ -453,7 +480,8 @@ details[open] .chev{transform:rotate(180deg)}
           <li>SuccessFactors Onboarding 2.0: designing the business process, UAT structure and reporting, go-live planned <b>Dec 2026</b></li>
           <li>Designed competencies for scholarship roles in the job family framework; now validate competency assessments for talent management</li>
           <li>Build the Power BI dashboards and Excel models that track <b>1,000+</b> scholarship and vocational students across <b>6</b> programmes</li>
-          <li>Automated recurring programme reports with Power Query and VBA; use Copilot in Power BI and Microsoft 365 for DAX and summaries</li>
+          <li>Built a daily ETL pipeline for SAP SuccessFactors LMS data on my own initiative, live since Oct 2026. Two Power Automate flows and Office Scripts consolidate four scheduled CSV extracts, fill gaps from two reference tables I maintain, and check for duplicate and missing files before saving a dated dataset to SharePoint</li>
+          <li>Automated the team's daily LMS report: the pipeline emails an HTML summary with a link to the latest data, and recurring programme reports refresh through Power Query and VBA. Power BI dashboards on the new dataset are in progress</li>
           <li>Check SuccessFactors LMS and student records for data quality before each reporting cycle</li>
         </ul>
       </details>
@@ -491,16 +519,16 @@ details[open] .chev{transform:rotate(180deg)}
     <!-- skills -->
     <h2 class="sec-title" id="skills">Skills</h2>
     <div class="v s4" style="--k:var(--c1)">
-      <h3>Data &amp; tools <span>7 selected</span></h3>
-      <ul class="slist"><li>Microsoft Power BI</li><li>Power Query · DAX <small style="color:var(--muted)">· PL-300, Jan 2027</small></li><li>SQL</li><li>ETL &amp; data modelling</li><li>Data integration</li><li>Microsoft Access &amp; VBA</li><li>Python <small style="color:var(--muted)">· learning</small></li></ul>
+      <h3>Data &amp; tools <span>9 selected</span></h3>
+      <ul class="slist"><li>Microsoft Power BI</li><li>Power Query · DAX <small style="color:var(--muted)">· PL-300, Jan 2027</small></li><li>SQL</li><li>ETL &amp; data modelling</li><li>Data pipelines &amp; integration</li><li>Power Automate &amp; Office Scripts</li><li>Workflow automation</li><li>Microsoft Access &amp; VBA</li><li>Python <small style="color:var(--muted)">· learning</small></li></ul>
     </div>
     <div class="v s4" style="--k:var(--c2)">
       <h3>People analytics <span>9 selected</span></h3>
       <ul class="slist"><li>Strategic workforce planning</li><li>Headcount planning &amp; forecasting</li><li>Workforce supply &amp; demand planning</li><li>Scenario planning</li><li>Job matching &amp; competencies</li><li>Skills gap analysis</li><li>Redeployment &amp; internal mobility</li><li>Reskilling &amp; learning analytics</li><li>Organisational design</li></ul>
     </div>
     <div class="v s4" style="--k:var(--c4)">
-      <h3>Systems &amp; AI <span>7 selected</span></h3>
-      <ul class="slist"><li>HRIS: SAP HR &amp; SuccessFactors</li><li>iCIMS Talent Acquisition</li><li>Requirements &amp; UAT</li><li>Data quality &amp; governance</li><li>Copilot in Power BI &amp; M365</li><li>Claude &amp; ChatGPT <small style="color:var(--muted)">· own builds</small></li><li>Business process mapping</li></ul>
+      <h3>Systems &amp; AI <span>8 selected</span></h3>
+      <ul class="slist"><li>HRIS: SAP HR &amp; SuccessFactors</li><li>SharePoint</li><li>iCIMS Talent Acquisition</li><li>Requirements &amp; UAT</li><li>Data quality &amp; governance</li><li>Copilot in Power BI &amp; M365</li><li>Claude &amp; ChatGPT <small style="color:var(--muted)">· own builds</small></li><li>Business process mapping</li></ul>
     </div>
 
     <!-- education -->
