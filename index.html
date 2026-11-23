@@ -205,70 +205,9 @@ details[open] .chev{transform:rotate(180deg)}
 .btn.light{background:#fff;color:#13203a}
 .src{font-size:12px;color:var(--muted);margin-top:18px;display:flex;flex-wrap:wrap;gap:6px 18px}
 
-/* ---------- hero (report cover) ---------- */
-.hero{grid-column:span 12;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;padding:32px 40px 0;border-radius:16px;overflow:hidden}
-.hero:hover{box-shadow:var(--shadow)}
-.byline{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding-bottom:22px;border-bottom:1px solid var(--line)}
-.who{display:flex;align-items:center;gap:14px}
-.who img{width:52px;height:52px;border-radius:12px;object-fit:cover;object-position:50% 30%}
-.who b{display:block;font:600 16px/1.2 var(--sans);letter-spacing:-.01em}
-.who span{font-size:13px;color:var(--muted)}
-.hero-copy{padding:18px 0 36px;align-self:center}
-.hero h1{font:500 clamp(40px,4vw,58px)/1.02 var(--sans);letter-spacing:-.04em;margin:0 0 22px;color:var(--ink)}
-.hero h1 span{display:block}
-.hero h1 .m{color:#858fa3}
-.eyebrow{display:block;font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-.hero h1.title{font:600 clamp(26px,2.6vw,36px)/1.15 var(--sans);letter-spacing:-.02em;margin:0 0 18px}
-.hook{font:600 clamp(18px,1.7vw,22px)/1.38 var(--sans);letter-spacing:-.01em;color:var(--muted);margin:0 0 12px;max-width:38rem}
-.lede{font-size:15px;line-height:1.6;color:var(--muted);max-width:38rem;margin:0 0 16px}
-.hero-copy .tags{margin:0 0 24px;max-width:38rem}
-.stat em{display:block;font-style:normal;font-size:12px;color:#8a93a6;margin:4px 0 0 16px}
-.lede b{color:var(--ink);font-weight:600}
-.acts{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px}
-.more{display:inline-flex;align-items:center;gap:6px;min-height:44px;font:600 14px/1 var(--sans);color:var(--ink);text-decoration:none}
-.more svg{transition:transform .2s cubic-bezier(.4,0,.2,1)}
-.more:hover svg{transform:translateX(3px)}
-.note{font:500 12px/1 var(--mono);color:var(--muted);letter-spacing:.02em}
-/* signature: redeployment model */
-.model{align-self:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px 10px;margin:18px 0 36px}
-.model h3{display:flex;justify-content:space-between;align-items:center;font:600 13px/1.3 var(--sans);margin:0 0 6px}
-.model h3 span{font:500 11px/1 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
-.model svg{display:block;width:100%;height:auto;overflow:visible}
-.mwrap{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.mwrap::-webkit-scrollbar{display:none}
-.model .col{font:600 10px/1 var(--mono);letter-spacing:.14em;fill:#8a93a6}
-.model .nd rect{fill:var(--card);stroke:var(--line)}
-.model .nd text{font:500 12px var(--sans);fill:var(--ink)}
-.model .nd.hi rect{stroke:var(--c1);stroke-width:1.5}
-.model .nd.hi text{fill:var(--c1);font-weight:600}
-.model .nd.gap rect{fill:var(--c3-soft);stroke:var(--c3);stroke-dasharray:4 3}
-.model .nd.gap text{fill:#9a6511;font-weight:600}
-.model .ln{fill:none;stroke:#cfd5df;stroke-width:1.5}
-.model .ln.hi{stroke:var(--c1);stroke-width:2.5}
-.model .ln.gp{stroke:var(--c3);stroke-width:2;stroke-dasharray:5 4}
-.model-key{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted);margin-top:6px}
-.model-key i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:6px;vertical-align:3px;background:var(--c1)}
-.model-key i.g{background:repeating-linear-gradient(90deg,var(--c3) 0 5px,transparent 5px 8px)}
-/* quiet stat strip */
-.stats{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);margin:0 -40px}
-.stat{padding:20px 24px 22px 40px;border-left:1px solid var(--line)}
-.stat:first-child{border-left:0}
-.stat b{display:block;font:600 clamp(26px,2.4vw,34px)/1 var(--mono);letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums}
-.stat b small{font-size:.5em;color:var(--muted);margin-left:3px;letter-spacing:0}
-.stat span{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-top:8px}
-.stat span::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--k);flex:none}
-::selection{background:rgba(15,138,116,.22)}
-
 /* motion */
 @media (prefers-reduced-motion:no-preference){
   html{scroll-behavior:smooth}
-  .in{animation:in .8s cubic-bezier(.22,1,.36,1) both;animation-delay:var(--d,0s)}
-  @keyframes in{from{opacity:0;transform:translateY(22px)}}
-  .model .ln{stroke-dasharray:var(--len) var(--len);animation:draw 1.1s cubic-bezier(.22,1,.36,1) both;animation-delay:var(--d,.6s)}
-  .model .ln.gp{stroke-dasharray:5 4;animation:fade .6s ease both;animation-delay:1.7s}
-  @keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
-  .model .nd{animation:fade .5s ease both;animation-delay:var(--d,.5s)}
-  @keyframes fade{from{opacity:0}}
   .plan i{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
   @keyframes rise{from{transform:scaleY(0)}}
   .bar,.cmp i{animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
@@ -278,11 +217,6 @@ details[open] .chev{transform:rotate(180deg)}
 }
 
 /* ---------- responsive ---------- */
-@media (max-width:1180px){
-  .hero{grid-template-columns:minmax(0,1fr);gap:0}
-  .hero-copy{padding-bottom:8px}
-  .model{max-width:560px}
-}
 @media (max-width:1100px){
   .s3{grid-column:span 6}.s4{grid-column:span 6}.s5,.s7,.s8{grid-column:span 12}
 }
@@ -303,21 +237,6 @@ details[open] .chev{transform:rotate(180deg)}
   .roles summary{grid-template-columns:1fr auto}
   .roles .p{grid-column:1/-1;order:-1;margin-bottom:-8px}
   .roles ul{padding-left:4px}
-}
-@media (max-width:640px){
-  .hero{padding:20px 20px 0;border-radius:14px}
-  .byline{padding-bottom:18px}
-  .slicers .slicer:nth-child(2){display:none}
-  .hero h1.title{font-size:24px;margin-bottom:14px}
-  .hook{font-size:18px}
-  .model{padding:14px 0 8px 14px;margin:22px 0 24px}
-  .model h3,.model-key{padding-right:14px}
-  .mwrap{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
-  .model svg{width:480px;max-width:none;padding-right:24px}
-  .stats{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -20px}
-  .stat{padding:16px 16px 18px 20px}
-  .stat:nth-child(3){border-left:0}
-  .stat:nth-child(n+3){border-top:1px solid var(--line)}
 }
 @media (max-width:520px){
   .bar{font-size:0;padding:0}
@@ -350,75 +269,67 @@ details[open] .chev{transform:rotate(180deg)}
 </aside>
 
 <main id="main">
+  <header class="rhead" id="overview">
+    <div class="t">
+      <small>People Analytics Portfolio</small>
+      <h1>Mohamed Idris · People Analytics &amp; Workforce Planning</h1>
+    </div>
+    <div class="slicers" aria-label="Report filters">
+      <span class="slicer"><em>Org</em> QatarEnergy</span>
+      <span class="slicer"><em>Period</em> 1999 – 2026</span>
+      <span class="slicer"><span class="dot"></span> Open to roles</span>
+    </div>
+  </header>
+
   <div class="grid">
-    <header class="v hero" id="overview">
-      <div class="byline in" style="--d:0s">
-        <div class="who">
-          <img src="photo.jpeg" alt="Mohamed Idris" width="52" height="52">
-          <div><b>Profile</b><span>Doha, Qatar</span></div>
-        </div>
-        <div class="slicers" aria-label="Report filters">
-          <span class="slicer"><em>Org</em> QatarEnergy</span>
-          <span class="slicer"><em>Period</em> 1999 – 2026</span>
-          <span class="slicer"><span class="dot"></span> Open to roles</span>
+    <div class="v s7">
+      <h3>Profile <span>Doha, Qatar</span></h3>
+      <div class="profile">
+        <img class="photo" src="photo.jpeg" alt="Mohamed Idris" width="132" height="132">
+        <div>
+          <p class="hook">Companies are redesigning jobs around AI. I work on the HR data that says who has which skills, who can move where, and what training closes the gap.</p>
+          <p>Six years as a Workforce Analyst in HR on annual resourcing plans, redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs, and business lead for their side of the iCIMS and SuccessFactors rollouts. Preparing for Microsoft PL-300, January 2027.</p>
+          <div class="tags"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>SuccessFactors</span><span>iCIMS</span><span>Copilot</span></div>
         </div>
       </div>
+    </div>
 
-      <div class="hero-copy">
-        <small class="eyebrow in" style="--d:.05s">People Analytics Portfolio</small>
-        <h1 class="title in" style="--d:.1s">Mohamed Idris · People Analytics &amp; Workforce Planning</h1>
-        <p class="hook in" style="--d:.22s">Companies are redesigning jobs around AI. I work on the HR data that says who has which skills, who can move where, and what training closes the gap.</p>
-        <p class="lede in" style="--d:.32s">Six years as a Workforce Analyst in HR on annual resourcing plans, redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs, and business lead for their side of the iCIMS and SuccessFactors rollouts. Preparing for Microsoft PL-300, January 2027.</p>
-        <div class="tags in" style="--d:.4s"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>SuccessFactors</span><span>iCIMS</span><span>Copilot</span></div>
-        <div class="acts in" style="--d:.48s">
-          <a class="btn pri" href="https://www.linkedin.com/in/mohamedidris/" rel="noopener">Connect on LinkedIn</a>
-          <a class="more" href="#work">See the work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
+    <div class="v s5">
+      <h3>Career mix <span>Years by track</span></h3>
+      <div class="donut-wrap">
+        <div class="donut" role="img" aria-label="Career years by track: Analytics 9.4, Administration and support 16.0, IT and design 1.0"><b><span>26.4<small>years total</small></span></b></div>
+        <ul class="legend">
+          <li><i style="background:var(--c1)"></i>Analytics<b>9.4</b></li>
+          <li><i style="background:var(--c2)"></i>Admin &amp; business support<b>16.0</b></li>
+          <li><i style="background:var(--c4)"></i>IT &amp; design<b>1.0</b></li>
+        </ul>
       </div>
+    </div>
 
-      <figure class="model in" style="--d:.3s" aria-label="Redeployment model: today's roles connect to shared skills and next roles. Highlighted path is my own move from Admin Supervisor to Workforce Analyst; a dashed line marks the training gap, SQL and Power BI.">
-        <h3>Redeployment model <span>Illustrative</span></h3>
-        <div class="mwrap"><svg viewBox="0 0 470 252" role="img" aria-hidden="true">
-          <text class="col" x="0" y="12">TODAY</text><text class="col" x="161" y="12">SKILLS</text><text class="col" x="322" y="12">NEXT</text>
-          <g>
-            <path class="ln" style="--len:200;--d:.6s" d="M118 55C140 55 140 45 161 45"/>
-            <path class="ln" style="--len:200;--d:.65s" d="M118 55C140 55 140 93 161 93"/>
-            <path class="ln" style="--len:200;--d:.7s" d="M118 175C140 175 140 93 161 93"/>
-            <path class="ln" style="--len:200;--d:.75s" d="M118 175C140 175 140 141 161 141"/>
-            <path class="ln" style="--len:200;--d:.8s" d="M118 115C140 115 140 141 161 141"/>
-            <path class="ln" style="--len:200;--d:.9s" d="M279 93C300 93 300 115 322 115"/>
-            <path class="ln" style="--len:200;--d:.95s" d="M279 141C300 141 300 175 322 175"/>
-            <path class="ln" style="--len:200;--d:1s" d="M279 45C300 45 300 115 322 115"/>
-            <path class="ln" style="--len:200;--d:1.05s" d="M279 189C300 189 300 175 322 175"/>
-            <path class="ln hi" style="--len:200;--d:1.1s" d="M118 115C140 115 140 45 161 45"/>
-            <path class="ln hi" style="--len:200;--d:1.15s" d="M118 115C140 115 140 189 161 189"/>
-            <path class="ln hi" style="--len:200;--d:1.35s" d="M279 45C300 45 300 55 322 55"/>
-            <path class="ln hi" style="--len:200;--d:1.4s" d="M279 189C300 189 300 55 322 55"/>
-            <path class="ln gp" d="M440 229C466 229 466 55 440 55"/>
-          </g>
-          <g class="nd" style="--d:.45s"><rect x="0" y="40" width="118" height="30" rx="7"/><text x="10" y="59">Records officer</text></g>
-          <g class="nd hi" style="--d:.45s"><rect x="0" y="100" width="118" height="30" rx="7"/><text x="10" y="119">Admin supervisor</text></g>
-          <g class="nd" style="--d:.45s"><rect x="0" y="160" width="118" height="30" rx="7"/><text x="10" y="179">Planning clerk</text></g>
-          <g class="nd hi" style="--d:.6s"><rect x="161" y="30" width="118" height="30" rx="7"/><text x="171" y="49">Data handling</text></g>
-          <g class="nd" style="--d:.6s"><rect x="161" y="78" width="118" height="30" rx="7"/><text x="171" y="97">Scheduling</text></g>
-          <g class="nd" style="--d:.6s"><rect x="161" y="126" width="118" height="30" rx="7"/><text x="171" y="145">Stakeholders</text></g>
-          <g class="nd hi" style="--d:.6s"><rect x="161" y="174" width="118" height="30" rx="7"/><text x="171" y="193">Reporting</text></g>
-          <g class="nd hi" style="--d:.9s"><rect x="322" y="40" width="118" height="30" rx="7"/><text x="332" y="59">Workforce analyst</text></g>
-          <g class="nd" style="--d:.9s"><rect x="322" y="100" width="118" height="30" rx="7"/><text x="332" y="119">HR data officer</text></g>
-          <g class="nd" style="--d:.9s"><rect x="322" y="160" width="118" height="30" rx="7"/><text x="332" y="179">Program lead</text></g>
-          <g class="nd gap" style="--d:1.6s"><rect x="322" y="214" width="118" height="30" rx="7"/><text x="332" y="233">Gap: SQL, BI</text></g>
-        </svg></div>
-        <figcaption class="model-key"><span><i></i>My own move, 2015</span><span><i class="g"></i>Training gap to close</span></figcaption>
-      </figure>
-
-      <div class="stats">
-        <div class="stat" style="--k:var(--c1)"><b>9<small>yrs</small></b><span>Years in analytics</span><em>Workforce and program analysis</em></div>
-        <div class="stat" style="--k:var(--c2)"><b>25<small>yrs</small></b><span>Years at QatarEnergy</span><em>Formerly Qatar Petroleum</em></div>
-        <div class="stat" style="--k:var(--c4)"><b>1,000+</b><span>Students reported on</span><em>6 programs · Qatar, UK, US</em></div>
-        <div class="stat" style="--k:var(--c3)"><b>13.9%</b><span>SAP HR licence cost cut</span><em>Through user role analysis</em></div>
-      </div>
-    </header>
-
+    <div class="v kpi s3" style="--k:var(--c1);--ks:var(--c1-soft)">
+      <div class="lbl">Years in analytics</div>
+      <div class="val" data-count="9">9<small>yrs</small></div>
+      <div class="sub">Workforce and program analysis</div>
+      <span class="chip">Since 2017</span>
+    </div>
+    <div class="v kpi s3" style="--k:var(--c2);--ks:var(--c2-soft)">
+      <div class="lbl">Years at QatarEnergy</div>
+      <div class="val" data-count="25">25<small>yrs</small></div>
+      <div class="sub">Formerly Qatar Petroleum</div>
+      <span class="chip">Since 2001</span>
+    </div>
+    <div class="v kpi s3" style="--k:var(--c4);--ks:var(--c4-soft)">
+      <div class="lbl">Students reported on</div>
+      <div class="val" data-count="1000" data-suffix="+">1,000+</div>
+      <div class="sub">6 programs · Qatar, UK, US</div>
+      <span class="chip">Power BI</span>
+    </div>
+    <div class="v kpi s3" style="--k:var(--c3);--ks:var(--c3-soft)">
+      <div class="lbl">SAP HR licence cost cut</div>
+      <div class="val" data-count="13.9" data-suffix="%">13.9%</div>
+      <div class="sub">Through user role analysis</div>
+      <span class="chip">Cost saving</span>
+    </div>
 
     <!-- career -->
     <h2 class="sec-title" id="career">Career timeline</h2>
