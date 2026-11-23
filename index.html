@@ -217,8 +217,12 @@ details[open] .chev{transform:rotate(180deg)}
 .hero h1{font:500 clamp(40px,4vw,58px)/1.02 var(--sans);letter-spacing:-.04em;margin:0 0 22px;color:var(--ink)}
 .hero h1 span{display:block}
 .hero h1 .m{color:#858fa3}
-@media (min-width:641px){.hero h1 span{white-space:nowrap}}
-.lede{font-size:17px;line-height:1.6;color:var(--muted);max-width:34rem;margin:0 0 28px}
+.eyebrow{display:block;font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.hero h1.title{font:600 clamp(26px,2.6vw,36px)/1.15 var(--sans);letter-spacing:-.02em;margin:0 0 18px}
+.hook{font:600 clamp(18px,1.7vw,22px)/1.38 var(--sans);letter-spacing:-.01em;color:var(--muted);margin:0 0 12px;max-width:38rem}
+.lede{font-size:15px;line-height:1.6;color:var(--muted);max-width:38rem;margin:0 0 16px}
+.hero-copy .tags{margin:0 0 24px;max-width:38rem}
+.stat em{display:block;font-style:normal;font-size:12px;color:#8a93a6;margin:4px 0 0 16px}
 .lede b{color:var(--ink);font-weight:600}
 .acts{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px}
 .more{display:inline-flex;align-items:center;gap:6px;min-height:44px;font:600 14px/1 var(--sans);color:var(--ink);text-decoration:none}
@@ -304,9 +308,8 @@ details[open] .chev{transform:rotate(180deg)}
   .hero{padding:20px 20px 0;border-radius:14px}
   .byline{padding-bottom:18px}
   .slicers .slicer:nth-child(2){display:none}
-  .hero h1{font-size:clamp(28px,8.6vw,36px);letter-spacing:-.035em;margin-bottom:16px}
-  .hero h1 span{white-space:nowrap}
-  .lede{font-size:16px;margin-bottom:22px}
+  .hero h1.title{font-size:24px;margin-bottom:14px}
+  .hook{font-size:18px}
   .model{padding:14px 0 8px 14px;margin:22px 0 24px}
   .model h3,.model-key{padding-right:14px}
   .mwrap{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
@@ -352,7 +355,7 @@ details[open] .chev{transform:rotate(180deg)}
       <div class="byline in" style="--d:0s">
         <div class="who">
           <img src="photo.jpeg" alt="Mohamed Idris" width="52" height="52">
-          <div><b>Mohamed Idris</b><span>People Analytics &amp; Workforce Planning</span></div>
+          <div><b>Profile</b><span>Doha, Qatar</span></div>
         </div>
         <div class="slicers" aria-label="Report filters">
           <span class="slicer"><em>Org</em> QatarEnergy</span>
@@ -362,12 +365,14 @@ details[open] .chev{transform:rotate(180deg)}
       </div>
 
       <div class="hero-copy">
-        <h1><span class="m in" style="--d:.1s">Jobs are changing.</span><span class="in" style="--d:.22s">I map who can move.</span></h1>
-        <p class="lede in" style="--d:.36s">Companies are redesigning work around AI. I build the HR data that shows <b>who has which skills, who can move where, and what training closes the gap</b>. Six years of resourcing plans, redeployment and job matching at QatarEnergy.</p>
+        <small class="eyebrow in" style="--d:.05s">People Analytics Portfolio</small>
+        <h1 class="title in" style="--d:.1s">Mohamed Idris · People Analytics &amp; Workforce Planning</h1>
+        <p class="hook in" style="--d:.22s">Companies are redesigning jobs around AI. I work on the HR data that says who has which skills, who can move where, and what training closes the gap.</p>
+        <p class="lede in" style="--d:.32s">Six years as a Workforce Analyst in HR on annual resourcing plans, redundancy placement, job matching and re-orgs. Now Reporting Analyst for QatarEnergy's scholarship and vocational programs, and business lead for their side of the iCIMS and SuccessFactors rollouts. Preparing for Microsoft PL-300, January 2027.</p>
+        <div class="tags in" style="--d:.4s"><span>Workforce Planning</span><span>Redeployment</span><span>Reskilling</span><span>Power BI</span><span>SQL</span><span>HR Data Models</span><span>SuccessFactors</span><span>iCIMS</span><span>Copilot</span></div>
         <div class="acts in" style="--d:.48s">
           <a class="btn pri" href="https://www.linkedin.com/in/mohamedidris/" rel="noopener">Connect on LinkedIn</a>
           <a class="more" href="#work">See the work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <span class="note">PL-300 · Jan 2027</span>
         </div>
       </div>
 
@@ -407,10 +412,10 @@ details[open] .chev{transform:rotate(180deg)}
       </figure>
 
       <div class="stats">
-        <div class="stat" style="--k:var(--c1)"><b>9<small>yrs</small></b><span>In workforce &amp; program analytics</span></div>
-        <div class="stat" style="--k:var(--c2)"><b>25<small>yrs</small></b><span>At QatarEnergy, since 2001</span></div>
-        <div class="stat" style="--k:var(--c4)"><b>1,000+</b><span>Students reported on, 6 programs</span></div>
-        <div class="stat" style="--k:var(--c3)"><b>13.9%</b><span>SAP HR licence cost cut</span></div>
+        <div class="stat" style="--k:var(--c1)"><b>9<small>yrs</small></b><span>Years in analytics</span><em>Workforce and program analysis</em></div>
+        <div class="stat" style="--k:var(--c2)"><b>25<small>yrs</small></b><span>Years at QatarEnergy</span><em>Formerly Qatar Petroleum</em></div>
+        <div class="stat" style="--k:var(--c4)"><b>1,000+</b><span>Students reported on</span><em>6 programs · Qatar, UK, US</em></div>
+        <div class="stat" style="--k:var(--c3)"><b>13.9%</b><span>SAP HR licence cost cut</span><em>Through user role analysis</em></div>
       </div>
     </header>
 
